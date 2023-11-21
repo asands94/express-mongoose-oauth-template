@@ -35,7 +35,7 @@ app.use(function (req, res, next) {
 })
 
 app.use(indexRouter)
-app.use(exampleRouter)
+app.use('/example', exampleRouter)
 
 app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`)
